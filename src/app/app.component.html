@@ -1,0 +1,150 @@
+<!-- <<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app> -->
+<ion-container>
+
+<ion-content class="background" >
+
+<ion-grid>
+
+  
+    <div class="ion-text-center" style="padding-top: 15px; color: white; font-weight: bolder; ">     
+        <span class="material-icons">room </span>
+        <ion-label style="font-size: large;">
+        <ion-text > Mumbai</ion-text>  </ion-label>   
+    </div>
+
+    <div class="ion-text-center" >
+    <circle-progress
+        [percent]="83"
+        [radius]="50"
+        [outerStrokeWidth]="8"
+        [space]="-8"
+        [innerStrokeWidth]="8" 
+        [outerStrokeColor]=" '#13A43D' "        
+        [animation]="true"
+        [animationDuration]="300"
+        [titleColor] = " '#c1bdbd' "
+        [clockwise]="false"
+    >
+    </circle-progress>
+    <p style="color: white; font-size: small;">Last synced 2 hrs ago</p>
+    </div> 
+  
+  <ion-card class="size" color="light">
+    <ion-card-content>
+      <ion-row> 
+        <ion-col size=8>
+        <ion-row> 
+        <span class="material-icons" style="color: orange;">
+            directions_walk
+            </span>
+        <!-- <ion-thumbnail> <ion-img style="height: 25px; width: 35Px;" src="/assets/icon/feet1.jpg" ></ion-img> </ion-thumbnail> -->
+        <ion-text style="font-weight: bold;"> Steps </ion-text>
+       </ion-row>
+      <ion-row>
+        <ion-label> <ion-text style="font-size: x-large; font-weight: bold;"> 1824 </ion-text> / 7000</ion-label></ion-row>
+       </ion-col>
+
+    <ion-col size=4>
+      <ion-label>
+
+        <div id="piechart" #pieChart style="width: 80px; height: 80px; color: orangered;"></div>
+
+        <!-- <div id="piechart" #pieChart style="width: 450px; height: 300px;"></div> -->
+
+      </ion-label>
+    </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <!-- ============================================================================================== -->
+
+  <ion-card class="size" color="light">
+    <ion-card-content>
+      <ion-row> <ion-col size=6>
+      <ion-row>
+        <ion-label> <ion-icon name="moon"  style="color: darkblue; font-size:20px;"></ion-icon>
+          <ion-text style="font-weight: bold;">  Sleep</ion-text></ion-label>
+        </ion-row>
+      <ion-row>
+      <ion-label><ion-text style="font-size: x-large; font-weight: bold;">6 </ion-text> hrs 
+                <ion-text style="font-size: x-large; font-weight: bold;"> 30 </ion-text> min</ion-label> </ion-row>
+    </ion-col>
+
+    <ion-col size=6>
+      <p> <span>4:30am</span> <span >11am</span></p> 
+      <!-- <ion-row> <ion-text>4:30am</ion-text>
+        <ion-text>4:30am</ion-text> </ion-row> -->
+        <span>
+        <ion-progress-bar class="style"   value="0.5"></ion-progress-bar>
+      </span>
+    </ion-col>
+
+      </ion-row> </ion-card-content>
+  </ion-card>
+
+  <!-- =========================================================================================== -->
+
+  <ion-card color="light" class="size">
+    <ion-card-content>
+      <ion-row> <ion-col size=6>
+      <ion-row>
+        <ion-label> <ion-icon name="flame-sharp"  style="color: red; font-size:20px;"></ion-icon>
+          <ion-text style="font-weight: bold;"> Calories Burnt  </ion-text></ion-label></ion-row>
+      <ion-row>
+        <ion-label>
+        <ion-text style="font-size: x-large; font-weight: bold;">1456 </ion-text> kcal </ion-label></ion-row>
+    </ion-col>
+
+    <ion-col size=6>
+      <ion-row> <ion-text style="font-size: x-large;">1100 / 356</ion-text></ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label> <ion-icon style="font-size: x-small; color: seagreen;" name="ellipse-sharp"></ion-icon> <ion-text style="font-size: small;"> Active</ion-text> 
+          </ion-label>
+          </ion-col>
+        
+        <ion-col> 
+          <ion-label> <ion-icon style="font-size: x-small; color: red;" name="ellipse-sharp"></ion-icon> <ion-text style="font-size: small;"> Rest</ion-text> </ion-label>
+        </ion-col>
+      </ion-row>
+      
+    </ion-col>
+
+      </ion-row> </ion-card-content>
+  </ion-card>
+
+  <!-- ================================================================================================ -->
+
+  <ion-card color="light" class="size">
+    <ion-card-content>
+      <ion-row> <ion-col size=9>
+      <ion-row> <ion-label>
+        <span class="material-icons" style="color: purple; ">
+          self_improvement</span>
+           <ion-text style="font-weight: bold;"> Meditation</ion-text></ion-label> </ion-row>
+      <ion-row>How long have you meditated?</ion-row>
+    </ion-col>
+
+    <ion-col size=3>
+      <ion-label> <ion-text style="font-size: x-large; font-weight: bold;">20 </ion-text> min</ion-label>
+    </ion-col>
+
+      </ion-row> </ion-card-content>
+  </ion-card>
+
+  <div class="ion-text-center">
+     <ion-button  color="light" style="color: black; font-weight: bold;" > Sync Now</ion-button>
+  </div>
+     
+
+</ion-grid>
+</ion-content>
+
+
+
+</ion-container>
