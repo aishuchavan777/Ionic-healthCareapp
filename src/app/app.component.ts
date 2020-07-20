@@ -26,16 +26,17 @@ export class AppComponent implements AfterViewInit{
 
   const data = google.visualization.arrayToDataTable([
     ['Task', 'Hours per Day'],
-    ['Work', 11],
-    ['Eat', 2],
-    ['Commute', 2],
-    ['Watch TV', 2],
-    ['Sleep', 7]
+    ['Work', 10],
+    ['Sleep', 7],
+    ['exerxise', 2],
+    ['other', 5]
+    
   ]);
 
   const options = {
-    bar: { groupWidth: '70%' },
-    colors: ['yellow'],
+    bar: { groupWidth: '50%' },
+    colors: ['red'],
+    backgroundColor: '#f4f5f8'
   };
 
   const chart = new google.visualization.ColumnChart(this.pieChart.nativeElement);
